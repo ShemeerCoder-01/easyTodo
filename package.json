@@ -4,7 +4,8 @@
   "description": "This is express plus mongob learning project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
   },
   "author": "Muhammed Shemeer",
   "license": "ISC",
