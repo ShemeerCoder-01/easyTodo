@@ -8,7 +8,7 @@ const session = require('express-session');
 const mongodbSession = require('connect-mongodb-session')(session);
 app.use(express.json());
 const cors = require('cors');
-
+const PORT =process.env.PORT || 8001;
 
 db();
 app.use(cors({
@@ -29,6 +29,6 @@ app.use(session({
 
 app.use('/user',userRouter);
 app.use('/todo',todoRouter);
-app.listen(process.env.PORT,()=>{
+app.listen(PORT,()=>{
     console.log("server started");
 });
