@@ -24,7 +24,7 @@ app.use(session({
     resave:false,
     saveUninitialized:false,
     store:store,
-    cookie:{path:'/',secure:false,maxAge:100000}
+    cookie:{path:'/',secure:false,maxAge:3600000}
 }));
 
 app.use('/user',userRouter);
