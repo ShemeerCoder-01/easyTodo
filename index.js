@@ -11,9 +11,8 @@ const cors = require('cors');
 const PORT =process.env.PORT || 8001;
 
 db();
-
 app.use(cors({
-    origin:"easy-todo-app.vercel.app"
+    origin:"https://easy-todo-app.vercel.app"
 }));
 const store = new mongodbSession({
     uri:process.env.CONNECTION_STRING,
