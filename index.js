@@ -11,8 +11,9 @@ const cors = require('cors');
 const PORT =process.env.PORT || 8001;
 
 db();
+
 app.use(cors({
-    origin:"https://easytodoo.netlify.app"
+    origin:"easy-todo-app.vercel.app"
 }));
 const store = new mongodbSession({
     uri:process.env.CONNECTION_STRING,
