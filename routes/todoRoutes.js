@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const isSessionValid = require('../middlewares/isSessionValid');
 const { addTodo, getAllTodos, deleteATodo, updateATodo } = require('../controllers/todoController');
 
 //@desc add a todo
